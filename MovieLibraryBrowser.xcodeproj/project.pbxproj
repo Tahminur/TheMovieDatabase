@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		0F5FF02F2E1795320076D1F6 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0F5FF02E2E1795320076D1F6 /* Kingfisher */; };
+		0F5FF0342E17A12D0076D1F6 /* MovieLibraryBrowser-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0F5FF0332E17A1260076D1F6 /* MovieLibraryBrowser-Info.plist */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		0F3FB3BB2E16145A00BB9483 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -27,6 +32,7 @@
 		0F3FB3AB2E16145A00BB9483 /* MovieLibraryBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MovieLibraryBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F3FB3BA2E16145A00BB9483 /* MovieLibraryBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieLibraryBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F3FB3C42E16145A00BB9483 /* MovieLibraryBrowserUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieLibraryBrowserUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F5FF0332E17A1260076D1F6 /* MovieLibraryBrowser-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MovieLibraryBrowser-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -52,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F5FF02F2E1795320076D1F6 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +86,7 @@
 				0F3FB3BD2E16145A00BB9483 /* MovieLibraryBrowserTests */,
 				0F3FB3C72E16145A00BB9483 /* MovieLibraryBrowserUITests */,
 				0F3FB3AC2E16145A00BB9483 /* Products */,
+				0F5FF0332E17A1260076D1F6 /* MovieLibraryBrowser-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
@@ -112,6 +120,7 @@
 			);
 			name = MovieLibraryBrowser;
 			packageProductDependencies = (
+				0F5FF02E2E1795320076D1F6 /* Kingfisher */,
 			);
 			productName = MovieLibraryBrowser;
 			productReference = 0F3FB3AB2E16145A00BB9483 /* MovieLibraryBrowser.app */;
@@ -195,6 +204,9 @@
 			);
 			mainGroup = 0F3FB3A22E16145A00BB9483;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				0F5FF02D2E1795320076D1F6 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 0F3FB3AC2E16145A00BB9483 /* Products */;
 			projectDirPath = "";
@@ -212,6 +224,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F5FF0342E17A12D0076D1F6 /* MovieLibraryBrowser-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +335,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"INFOPLIST_FILE[sdk=*]" = "MovieLibraryBrowser-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -380,6 +394,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				"INFOPLIST_FILE[sdk=*]" = "MovieLibraryBrowser-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -558,6 +573,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0F5FF02D2E1795320076D1F6 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.4.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0F5FF02E2E1795320076D1F6 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0F5FF02D2E1795320076D1F6 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0F3FB3A32E16145A00BB9483 /* Project object */;
 }
