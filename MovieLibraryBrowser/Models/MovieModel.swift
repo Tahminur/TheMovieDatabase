@@ -9,7 +9,7 @@ import Foundation
 import SwiftData
 
 @Model
-class MovieModel: Identifiable {
+class MovieModel {
     @Attribute(.unique) var id: Int
     var title: String
     var overview: String
